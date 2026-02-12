@@ -1,0 +1,30 @@
+[project]
+name = "voz-crawler"
+version = "0.1.0"
+description = "A web crawler for voz.vn forum"
+readme = "README.md"
+authors = [
+    { name = "niits", email = "trungtdxz@mail.com" },
+]
+requires-python = ">=3.11"
+dependencies = [
+    "cloudscraper>=1.2.71",
+    "httpx>=0.28.1",
+    "matplotlib>=3.10.8",
+    "pandas>=3.0.0",
+    "parsel>=1.11.0",
+    "tqdm>=4.67.3",
+]
+
+[project.scripts]
+voz-crawler = "voz_crawler:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.2.0",
+    "ruff>=0.15.0",
+]
