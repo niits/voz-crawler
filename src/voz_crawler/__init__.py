@@ -14,6 +14,15 @@ from .exceptions import (
     ThreadNotFoundError,
     VozCrawlerError,
 )
+from .graph import (
+    GraphStats,
+    ReplyEdge,
+    build_reply_graph,
+    compute_graph_stats,
+    edges_to_dataframe,
+    extract_reply_edges,
+    plot_reply_graph,
+)
 from .parser import PageData, PostData
 
 __all__ = [
@@ -21,6 +30,13 @@ __all__ = [
     "PageCache",
     "PageData",
     "PostData",
+    "ReplyEdge",
+    "GraphStats",
+    "extract_reply_edges",
+    "edges_to_dataframe",
+    "build_reply_graph",
+    "compute_graph_stats",
+    "plot_reply_graph",
     "VozCrawlerError",
     "NetworkError",
     "HTTPError",
