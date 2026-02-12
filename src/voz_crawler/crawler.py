@@ -5,9 +5,7 @@ from __future__ import annotations
 import logging
 import re
 import time
-from dataclasses import dataclass, field
 from pathlib import Path
-from urllib.parse import urlparse, urlunparse
 
 import cloudscraper
 import pandas as pd
@@ -19,10 +17,9 @@ from .exceptions import (
     HTTPError,
     NetworkError,
     PageOutOfRangeError,
-    PageParsingError,
     ThreadNotFoundError,
 )
-from .parser import PageData, PostData, parse_thread_page
+from .parser import PageData, parse_thread_page
 
 logger = logging.getLogger(__name__)
 

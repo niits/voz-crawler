@@ -10,7 +10,7 @@ from pathlib import Path
 from .exceptions import CacheReadError, CacheWriteError
 
 DEFAULT_CACHE_DIR = Path(".voz_cache")
-DEFAULT_TTL = 3600  # 1 hour
+DEFAULT_TTL = 0  # seconds; 0 = never expire
 
 
 class PageCache:

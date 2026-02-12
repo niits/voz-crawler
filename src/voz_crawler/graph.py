@@ -4,12 +4,11 @@ from __future__ import annotations
 
 import re
 from collections import Counter
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 import networkx as nx
 import pandas as pd
 
-from .parser import PageData
 
 _QUOTE_RE = re.compile(r'<quote\s+author="([^"]+)"(?:\s+post_id="(\d+)")?>')
 

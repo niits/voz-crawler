@@ -11,3 +11,4 @@ wheels/
 
 # Cache
 .voz_cache/
+data/
